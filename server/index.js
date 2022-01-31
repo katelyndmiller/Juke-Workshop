@@ -28,6 +28,7 @@ app.use((req, res, next) => {
   if (path.extname(req.path).length > 0) {
     res.status(404).end()
   } else {
+    console.log('we made it to index.js 404 error message')
     next()
   }
 })
